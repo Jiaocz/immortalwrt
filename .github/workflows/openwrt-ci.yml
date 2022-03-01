@@ -1,6 +1,6 @@
 # source https://github.com/KFERMercer/OpenWrt-CI/blob/master/openwrt-ci.yml
 
-name: OpenWrt-CI
+name: OpenWrt-CI-MIR3G
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
       - openwrt-18.06
   release:
     types: [published]
+  workflow_dispatch:
 
 jobs:
   build_openwrt_mir3g:

@@ -1,4 +1,4 @@
-name: OpenWrt-CI-2
+name: OpenWrt-CI-MIR4AG
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - openwrt-18.06
   release:
     types: [published]
+  workflow_dispatch:
 
 jobs:
 
@@ -4540,7 +4541,7 @@ jobs:
           #
           # CONFIG_PACKAGE_luci-theme-Butterfly is not set
           # CONFIG_PACKAGE_luci-theme-Butterfly-dark is not set
-          CONFIG_PACKAGE_luci-theme-argon=y
+          # CONFIG_PACKAGE_luci-theme-argon=y
           # CONFIG_PACKAGE_luci-theme-argon-dark-mod is not set
           # CONFIG_PACKAGE_luci-theme-argon-light-mod is not set
           # CONFIG_PACKAGE_luci-theme-argon-mc is not set
